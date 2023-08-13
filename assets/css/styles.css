@@ -1,11 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(236, 9%, 61%);
+    Font-size: 18px;
 }
 
+.container {
+    background-image: url("../images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
+}
+
+.title {
+    width: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: left;
+    justify-content: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-stretch: expanded;
+    color: hsl(0, 0%, 98%);
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#tarea {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid hsl(233, 11%, 84%);
+    color: hsl(236, 9%, 61%);
+}
+
+#tarea:focus {
+    border: 1px solid hsl(280, 87%, 65%);
+}
+
+#guardar {
+    /*background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));*/
+    background-color: hsl(280, 87%, 65%);
+    color: hsl(0, 0%, 100%);
+    width: 20%;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid hsl(233, 11%, 84%);
+}
+
+#guardar:hover {
+    /*background-image: linear-gradient(to right, hsl(280, 87%, 65%), hsl(192, 100%, 67%));*/
+    background-color: hsl(192, 100%, 67%);
+
+    cursor: pointer;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.id-task {
+    width: 10%;
+    font-size: 16px;
+}
+
+.task {
+    width: 80%;
+    font-size: 16px;
+}
+
+.action {
+    width: 10%;
+    font-size: 18px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.true {
+    height: 25px;
+    width: 25px;
+    background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border-radius: 50%;
+    border: 1px solid hsl(233, 11%, 84%);
+}
+
+.false {
+    height: 25px;
+    width: 25px;
+    border: 1px solid hsl(233, 11%, 84%);
+    border-radius: 50%;
+
+}
+
+.true:hover,
+.false:hover,
+.delete:hover {
+    cursor: pointer;
+}
+
+.resumen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.total {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.realizadas {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 18px;
+}
 
 .attribution {
-    color: greenyellow;
+    padding-top: 20px;
+    color: hsl(237, 14%, 26%);
 }

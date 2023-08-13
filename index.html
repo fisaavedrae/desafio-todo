@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Desafio ToDo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico" />
@@ -10,12 +10,51 @@
 </head>
 
 <body>
-
-
-
-    <div class="attribution">
-        Coded by <a href="https://fisaavedrae.github.io/">FSE</a>
+    <div class="container">
+        <div class="layout">
+            <div class="title">TODO</div>
+            <div class="form">
+                <input id="tarea" type="text" placeholder="Ingrese la tarea">
+                <button id="guardar">Guardar</button>
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="id-task header">ID</div>
+                    <div class="task header">Tarea</div>
+                    <div class="action header">Acción</div>
+                </div>
+                <div class="item">
+                    <div class="id-task">23</div>
+                    <div class="task">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis cursus
+                        nunc.</div>
+                    <div class="action">
+                        <img class="true" src="./assets/images/icon-check.svg" alt="Marcar como realizada">
+                        <img class="delete" src="./assets/images/icon-cross.svg" alt="Eliminar Tarea">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="id-task">25</div>
+                    <div class="task">Tarea 2</div>
+                    <div class="action">
+                        <img class="false" src="./assets/images/icon-check.svg" alt="">
+                        <img class="delete" src="./assets/images/icon-cross.svg" alt="">
+                    </div>
+                </div>
+                <div class="resumen">
+                    <div class="total">Total: 2</div>
+                    <div class="realizadas">Realizadas: 0</div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="attribution">
+                    Coded by <a href="https://fisaavedrae.github.io/">FSE</a>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
     <script src="./assets/js/main.js"></script>
 </body>
 
