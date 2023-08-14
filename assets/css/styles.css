@@ -13,6 +13,7 @@ body {
 .container {
     background-image: url("../images/bg-desktop-light.jpg");
     background-repeat: no-repeat;
+    background-size: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +90,7 @@ body {
 
 }
 
-.list {
+#list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,13 +111,26 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 .id-task {
     width: 10%;
     font-size: 16px;
 }
 
 .task {
-    width: 80%;
+    width: 300px;
     font-size: 16px;
 }
 
@@ -131,7 +145,7 @@ body {
     gap: 10px;
 }
 
-.true {
+.done-true {
     height: 25px;
     width: 25px;
     background-image: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
@@ -139,7 +153,7 @@ body {
     border: 1px solid hsl(233, 11%, 84%);
 }
 
-.false {
+.done-false {
     height: 25px;
     width: 25px;
     border: 1px solid hsl(233, 11%, 84%);
@@ -160,7 +174,7 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: hsl(0, 0%, 98%);
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -184,5 +198,23 @@ body {
 
 .attribution {
     padding-top: 20px;
+    padding-bottom: 20px;
     color: hsl(237, 14%, 26%);
+}
+
+@media (min-width: 612px) {
+
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 700px;
+    }
+
+    .task {
+        width: 80%;
+        font-size: 16px;
+    }
 }

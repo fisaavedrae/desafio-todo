@@ -1,6 +1,10 @@
 # Intro
 
-En este desafío validaremos nuestros conocimientos sobre la manipulación del DOM y las instrucciones if else if y else y operadores lógicos., se utilizó Flex para el layout y la disposición de elementos y Media Query para hacer el sitio responsivo. Desarrolló con Mobile First
+En este desafío validaremos nuestros conocimientos para agregar elementos dinámicamente en una página web. Aplicando los conceptos y herramientas aprendidas hasta ahora, deberás crear una página
+web que permita mantener un control de tareas pendientes. 
+
+
+Se utilizó Flex para el layout y la disposición de elementos y Media Query para hacer el sitio responsivo. Desarrolló con Mobile First.
 
 # Responsive Breakpoint
 
@@ -13,7 +17,7 @@ Para desarrollar estoy usando un macbook air con una resolución de 1440x900, si
 
 
 
-[link repo](https://github.com/fisaavedrae/desafio-condiciones)
+[link repo](https://github.com/fisaavedrae/desafio-todo)
 
-[link live app](https://desafio-condiciones.vercel.app/)
+[link live app](https://desafio-todo.vercel.app/)
 
