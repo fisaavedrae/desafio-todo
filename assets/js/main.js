@@ -19,7 +19,6 @@ const tareasTODO = [
 let ultimoID = 0; //Almacena el ultimo ID de las tareas
 function cargarTareas() {
     let html = "";
-    let total = 0;
     let done = 0;
     tareasTODO.forEach(tarea => {
         // Uso interpolaciòn y templates para construir el html antes de actualizar el DOM 
@@ -31,13 +30,12 @@ function cargarTareas() {
                         <img class="delete" onclick="borrarTarea(${tarea.id})" src="./assets/images/icon-cross.svg">
                     </div>
                 </div>`;
-        total++;
         ultimoID = tarea.id;
         if (tarea.done) {
             done++;
         }
     });
-    document.getElementById("total").innerHTML = "Total tareas: " + total;
+    document.getElementById("total").innerHTML = "Total tareas: " + tareasTODO.length;
     document.getElementById("realizadas").innerHTML = "Realizadas: " + done;
     document.getElementById("list").innerHTML = html;
 
@@ -50,12 +48,10 @@ function marcarTarea(id) {
     });
     cargarTareas();
 }
+
 function borrarTarea(id) {
-    tareasTODO.forEach((tarea, index) => {
-        if (tarea.id == id) {
-            tareasTODO.splice(index, 1);
-        }
-    });
+    let indice = tareasTODO.findIndex(tarea => tarea.id == id);
+    tareasTODO.splice(indice, 1);
     cargarTareas();
 }
 function agregarTarea() {
