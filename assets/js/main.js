@@ -20,6 +20,7 @@ let ultimoID = 0; //Almacena el ultimo ID de las tareas
 function cargarTareas() {
     let html = "";
     let done = 0;
+    ultimoID = 0;
     tareasTODO.forEach(tarea => {
         // Uso interpolaciòn y templates para construir el html antes de actualizar el DOM 
         html += `<div class="item">
